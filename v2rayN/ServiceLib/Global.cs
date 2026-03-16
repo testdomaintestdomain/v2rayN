@@ -183,7 +183,7 @@ public class Global
         "",
         @"https://raw.githubusercontent.com/runetfreedom/russia-v2ray-custom-routing-list/main/v2rayN/",
         @"https://raw.githubusercontent.com/Chocolate4U/Iran-v2ray-rules/main/v2rayN/",
-        @"https://raw.githubusercontent.com/testdomaintestdomain/logistic-v2ray-custom-routing-list/v2rayN
+        @"https://raw.githubusercontent.com/testdomaintestdomain/logistic-v2ray-custom-routing-list/v2rayN"
     ];
 
     public static readonly Dictionary<string, string> UserAgentTexts = new()
