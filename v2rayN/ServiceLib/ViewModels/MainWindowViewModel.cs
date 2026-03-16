@@ -51,6 +51,8 @@ public class MainWindowViewModel : MyReactiveObject
 
     public ReactiveCommand<Unit, Unit> RegionalPresetIranCmd { get; }
 
+    public ReactiveCommand<Unit, Unit> RegionalPresetLogisticCmd { get; }
+
     public ReactiveCommand<Unit, Unit> ReloadCmd { get; }
 
     [Reactive]

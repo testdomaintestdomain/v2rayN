@@ -1293,6 +1293,9 @@
   <data name="menuRegionalPresetsIran" xml:space="preserve">
     <value>Irán</value>
   </data>
+  <data name="menuRegionalPresetsLogistic" xml:space="preserve">
+    <value>Logistic</value>
+  </data>
   <data name="TbSettingsChinaUserTip" xml:space="preserve">
     <value>Kínai régióban lévő felhasználók figyelmen kívül hagyhatják ezt az elemet</value>
   </data>

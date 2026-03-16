@@ -1290,6 +1290,9 @@
   <data name="menuRegionalPresetsIran" xml:space="preserve">
     <value>伊朗</value>
   </data>
+  <data name="menuRegionalPresetsLogistic" xml:space="preserve">
+    <value>物流业</value>
+  </data>
   <data name="TbSettingsChinaUserTip" xml:space="preserve">
     <value>中國區域用戶可忽略此項</value>
   </data>

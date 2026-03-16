@@ -2544,6 +2544,29 @@ public static class ConfigHandler
                 await SaveDNSItems(config, xrayDnsIran);
                 await SaveDNSItems(config, singboxDnsIran);
                 break;
+            
+            case EPresetType.Logistic:
+                config.ConstItem.GeoSourceUrl = Global.GeoFilesSources[3];
+                config.ConstItem.SrsSourceUrl = Global.SingboxRulesetSources[3];
+                config.ConstItem.RouteRulesTemplateSourceUrl = Global.RoutingRulesSources[3];
+
+                var xrayDnsLogistic = await GetExternalDNSItem(ECoreType.Xray, Global.DNSTemplateSources[3] + "v2ray.json");
+                var singboxDnsLogistic = await GetExternalDNSItem(ECoreType.sing_box, Global.DNSTemplateSources[3] + "sing_box.json");
+                var simpleDnsLogistic = await GetExternalSimpleDNSItem(Global.DNSTemplateSources[3] + "simple_dns.json");
+
+                if (simpleDnsLogistic == null)
+                {
+                    xrayDnsLogistic.Enabled = true;
+                    singboxDnsLogistic.Enabled = true;
+                    config.SimpleDNSItem = InitBuiltinSimpleDNS();
+                }
+                else
+                {
+                    config.SimpleDNSItem = simpleDnsLogistic;
+                }
+                await SaveDNSItems(config, xrayDnsLogistic);
+                await SaveDNSItems(config, singboxDnsLogistic);
+                break;
         }
 
         return true;

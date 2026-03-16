@@ -1364,6 +1364,12 @@ namespace ServiceLib.Resx {
                 return ResourceManager.GetString("menuRegionalPresetsRussia", resourceCulture);
             }
         }
+
+        public static string menuRegionalPresetsLogistic {
+            get {
+                return ResourceManager.GetString("menuRegionalPresetsLogistic", resourceCulture);
+            }
+        }
         
         /// <summary>
         ///   查找类似 Reload 的本地化字符串。
